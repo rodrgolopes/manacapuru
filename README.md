@@ -4,7 +4,7 @@
 
 A Python bot that automates some actions on Twitter, such as retweeting and favoriting tweets.
 
-The current working twitter bot can be found at https://twitter.com/manacapuru_
+The current working twitter bot can be found at <https://twitter.com/manacapuru_>
 
 ## Requirements:
 
