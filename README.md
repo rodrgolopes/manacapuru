@@ -31,8 +31,8 @@ Change the twitter API credentials in **manacapuru.py** file
 ``` python
 consumer_key = 'YOUR_CONSUMER_KEY'
 consumer_secret = 'YOUR_CONSUMER_SECRET'
-access_key = 'YOUR_ACCESS_KEY'
-access_secret = 'YOUR_ACCESS_SECRET'
+access_token = 'YOUR_ACCESS_KEY'
+access_token_secret = 'YOUR_ACCESS_SECRET'
 ```
 
 Run **manacapuru.py**

@@ -38,7 +38,7 @@ class Manacapuru:
             db.write(';' + id)
         else:
             db = open(self.outfile, 'w')
-            db.write(get_date("%d-%m-%Y") + '|' + id)
+            db.write(self.get_date("%d-%m-%Y") + '|' + id)
         db.close()
 
     def load_db(self, id):
