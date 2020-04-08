@@ -147,8 +147,8 @@ class Manacapuru:
                         if (info[0] == False) and (self.bad_caracteres(tweet_text) != True) and (counts <= 2):
                             tweet.favorite(), print("[favorite]"), time.sleep(1), self.create_db(str(tweet_userid))
                         if (info[0] == False) and (len(tweet_textclear) <= 16) and (self.bad_words(tweet_text) != True) and (self.bad_users(tweet_username) != True) and (counts == 0):
-                            x_status = f"{response_text()}"
-                            self.api.update_status(status = x_status, in_reply_to_status_id = tweetId, auto_populate_reply_metadata = True)
+                            x_status = f"{self.response_text()}"
+                            self.api.update_status(status = x_status, in_reply_to_status_id = tweet_id, auto_populate_reply_metadata = True)
                             print(f"TWEET: {x_status}]")
                         print(f"bad_words: {self.bad_words(tweet_text)}, bad_users: {self.bad_users(tweet_username)}, tamanho: {len(tweet_textclear)}, retweet: {info[1]}, favorite: {info[0]}\n",'-'*30)
                         time.sleep(2)
